@@ -33,4 +33,9 @@ class DescuentoFronteraTest {
         assertEquals(10, descuento.porcentaje(101));
     }
 
+    @Test
+    void ceroUnidadesDaCeroDescuento() {
+        assertEquals(0, descuento.porcentaje(0));
+    }
+
 }
